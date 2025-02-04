@@ -22,6 +22,8 @@ public:
 	std::string getName() const { return name; };
 	std::string getEmail() const { return email; };
 	friend std::ostream& operator<<(std::ostream& os, const Employee& person );
-	void learnSkill(std::string& skills);
-	void showSkill(std::ostream& os);
+	void learnSkill(std::string skillName);
+	void showSkill();
+	void clearskill(std::string removedSkill);
+	int calculateSalary();
 };
