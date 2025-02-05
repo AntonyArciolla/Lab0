@@ -5,7 +5,7 @@
 const int MAX_SIZE = 5;
 struct skill {
 	std::string skill_name;
-	int skill_level;
+	int skill_level =0;
 };
 class Employee
 {
@@ -16,14 +16,14 @@ private:
 
 	skill array[MAX_SIZE];
 public:
-	Employee(std::string name, std::string email, std::string location = "non provided");
-	std::string set_location(std::string newlocation);
+	Employee(std::string n, std::string e);
+	std::string setLocation(std::string newlocation);
 	std::string getLocation() const { return location; };
 	std::string getName() const { return name; };
 	std::string getEmail() const { return email; };
 	friend std::ostream& operator<<(std::ostream& os, const Employee& person );
 	void learnSkill(std::string skillName);
 	void showSkill();
-	void clearskill(std::string removedSkill);
+	void clearSkill(std::string removedSkill);
 	int calculateSalary();
 };

@@ -1,14 +1,23 @@
 #include "Employee.h"
-
-Employee::Employee(std::string name, std::string email, std::string location = "non provided")
-{
-
-}
-
 std::ostream& operator<<(std::ostream& os, const Employee& person)
 {
-	os << "Name: " << person.getName() << std::endl << "Email: " << person.getEmail() 
+	os << "Name: " << person.getName() << std::endl << "Email: " << person.getEmail()
 		<< std::endl << "Location: " << person.getLocation() << std::endl;
+	return os;
+}
+
+
+Employee::Employee(std::string n, std::string e)
+{
+	name = n;
+	email = e;
+	location = "nonProvided";
+}
+
+std::string Employee::setLocation(std::string newlocation)
+{
+	location = newlocation;
+	return location;
 }
 
 void Employee::learnSkill(std::string skillName)
@@ -38,11 +47,13 @@ void Employee::showSkill()
 		else {
 			array[i].skill_level = 1;
 		}
+		std::cout << "Skill Name: " << array[i].skill_name << std::endl 
+		<< "Skill Level: " << array[i].skill_level << std::endl;
 	}
 	
 }
 
-void Employee::clearskill(std::string removedSkill)
+void Employee::clearSkill(std::string removedSkill)
 {
 	for (int i = 0; i < MAX_SIZE; ++i) {
 		if (array[i].skill_name == removedSkill) {
@@ -54,14 +65,10 @@ void Employee::clearskill(std::string removedSkill)
 
 int Employee::calculateSalary()
 {
-	int salary;
+	int salary=0;
+
 	for (int i = 0; i < MAX_SIZE; ++i) {
-		if (array[i].skill_level = 3) {
-			salary = 150;
-		}
-		if (array[i].skill_level = 3) {
-			salary = 150;
-		}
+			salary += array[i].skill_level * 50;
 	}
 	return salary;
 }
