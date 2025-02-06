@@ -1,5 +1,6 @@
 /***************************************************************************
-* Creator: Antony Arciolla
+* File: lab0.cpp
+* Author: Antony Arciolla
 * Class: CST 202
 * Contains: Employee.h, Inter.h
 * IPO:

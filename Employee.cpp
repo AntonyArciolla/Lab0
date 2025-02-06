@@ -2,6 +2,7 @@
 * File: Employee.cpp
 * Author: Antony Arciolla
 * Class: CST 202
+* Contains: Employee.h
 * Description:
 *   This file implements the Employee class, which represents an employee with
 *   attributes such as name, email, location, and skills. It includes functionality

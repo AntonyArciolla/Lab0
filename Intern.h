@@ -2,6 +2,7 @@
 * File: Intern.h
 * Author: Antony Arciolla
 * Class: CST 202
+* Contains: Employee.h
 * Description:
 *   This file defines the Intern class, which inherits from the Employee class.
 *   It introduces an additional attribute for the intern's college and provides

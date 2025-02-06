@@ -2,6 +2,7 @@
 * File: Intern.cpp
 * Author: Antony Arciolla
 * Class: CST 202
+* Contains: Intern.h
 * Description:
 *   This file implements the Intern class, which is derived from the Employee class.
 *   It defines the constructor, a setter for the college attribute, and an overloaded
