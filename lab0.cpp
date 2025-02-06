@@ -1,3 +1,13 @@
+/***************************************************************************
+* Creator: Antony Arciolla
+* Class: CST 202
+* Contains: Employee.h, Inter.h
+* IPO:
+*This program demonstrates the use of the Employee and Intern classes by
+*Creating instances of Employee and Intern displaying initial object details.
+*Modifying object properties such as location and college.
+*Adding, displaying, removing skills and lastly, calculating salary.
+****************************************************************************/
 #include <iostream>
 #include "Employee.h"
 #include "Intern.h"
@@ -12,7 +22,7 @@ int main() {
 	std::string l2 = "Binghamton, NY";
 	
 	Employee erin(n1, e1);
-	Intern rich(n1, e1);
+	Intern rich(n2, e2);
 
 	std::cout << erin << std::endl;
 	std::cout << rich << std::endl;

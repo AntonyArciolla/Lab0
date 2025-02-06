@@ -1,3 +1,16 @@
+/***************************************************************************
+* File: Employee.h
+* Author: Antony Arciolla
+* Class: CST 202
+* Description:
+*   This file defines the Employee class, which represents an employee with
+*   attributes such as name, email, location, and a skill set. It provides
+*   functionality for managing employee skills, modifying location, and
+*   calculating salary.
+***************************************************************************/
+
+
+
 #pragma once
 #include <string>
 #include <iostream>
